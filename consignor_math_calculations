@@ -1,0 +1,66 @@
+-- SELECT * FROM `thorobid-dev.ingest.saleshubspot_cleaned_to_delete` LIMIT 1000
+
+DECLARE years ARRAY<INT64>;
+DECLARE exprs ARRAY<STRING>;
+DECLARE final_sql STRING;
+
+-- 1. Get distinct years
+SET years = (
+  SELECT ARRAY_AGG(DISTINCT sale_year ORDER BY sale_year)
+  FROM `thorobid-dev.ingest.saleshubspot_cleaned_to_delete`
+  WHERE sale_year IS NOT NULL
+);
+
+-- 2. Build dynamic SELECT expressions
+SET exprs = (
+  SELECT ARRAY_CONCAT_AGG([
+    -- Consignor metrics per year
+    -- 'SUM(CASE WHEN sale_year = ' || CAST(year AS STRING) || ' AND consignor IS NOT NULL THEN sale_price ELSE 0 END) AS total_earned_' || CAST(year AS STRING),
+    -- 'AVG(CASE WHEN sale_year = ' || CAST(year AS STRING) || ' AND consignor IS NOT NULL THEN sale_price ELSE NULL END) AS avg_earned_per_hip_' || CAST(year AS STRING),
+    -- 'COUNTIF(sale_year = ' || CAST(year AS STRING) || ' AND consignor IS NOT NULL) AS total_horses_sold_' || CAST(year AS STRING),
+
+    -- Buyer metrics per year
+    'SUM(CASE WHEN sale_year = ' || CAST(year AS STRING) || ' AND buyer IS NOT NULL THEN sale_price ELSE 0 END) AS total_spend_' || CAST(year AS STRING),
+    'AVG(CASE WHEN sale_year = ' || CAST(year AS STRING) || ' AND buyer IS NOT NULL THEN sale_price ELSE NULL END) AS avg_spend_per_hip_' || CAST(year AS STRING),
+    'COUNTIF(sale_year = ' || CAST(year AS STRING) || ' AND buyer IS NOT NULL) AS total_horses_purchased_' || CAST(year AS STRING)
+  ])
+  FROM UNNEST(years) AS year
+);
+
+-- 4. Build the final query string (no triple quotes)
+SET final_sql = (
+  SELECT ARRAY_TO_STRING(
+    [
+      'CREATE OR REPLACE TABLE `ingest.buyer_hubspot_to_delete` AS',
+      'SELECT',
+      '  buyer,',
+      '  ARRAY_TO_STRING(ARRAY_AGG(DISTINCT buyer_cleaned IGNORE NULLS), ", ") AS buyer_cleaned,',
+
+      -- Static columns: all distinct values comma-separated
+      '  ARRAY_TO_STRING(ARRAY_AGG(DISTINCT buyer_website IGNORE NULLS), ", ") AS buyer_website,',
+      '  ARRAY_TO_STRING(ARRAY_AGG(DISTINCT buyer_email IGNORE NULLS), ", ") AS buyer_email,',
+      '  ARRAY_TO_STRING(ARRAY_AGG(DISTINCT buyer_phone IGNORE NULLS), ", ") AS buyer_phone,',
+      '  ARRAY_TO_STRING(ARRAY_AGG(DISTINCT buyer_city IGNORE NULLS), ", ") AS buyer_city,',
+      '  ARRAY_TO_STRING(ARRAY_AGG(DISTINCT buyer_state IGNORE NULLS), ", ") AS buyer_state,',
+      '  ARRAY_TO_STRING(ARRAY_AGG(DISTINCT buyer_country IGNORE NULLS), ", ") AS buyer_country,',
+      -- For is_company: keep logic as BOOLEAN aggregation, e.g. TRUE if any row is TRUE
+      '  LOGICAL_OR(buyer_is_company) AS buyer_is_company,',
+
+      -- Dynamic metrics
+      STRING_AGG(expr, ',\n  '),
+
+      'FROM `thorobid-dev.ingest.saleshubspot_cleaned_to_delete`',
+      'WHERE sale_price IS NOT NULL AND buyer_cleaned IS NOT NULL',
+      'GROUP BY buyer',
+      'ORDER BY buyer ASC'
+    ],
+    '\n'
+  )
+  FROM UNNEST(exprs) AS expr
+);
+
+-- 4. Debug - Preview the generated SQL
+-- SELECT final_sql;
+
+-- 5. Execute
+EXECUTE IMMEDIATE final_sql;
