@@ -1,0 +1,6 @@
+# Ignore credentials and sensitive files
+thorobid-dev-97dc54cf1d04.json
+*.log
+*.pkl
+*_backup.csv
+.env

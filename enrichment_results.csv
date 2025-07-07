@@ -1,0 +1,31 @@
+entity_name,entity_type,website,email,phone,city,state,country,is_company
+de Meric Sales,consignor,http://www.demericsales.com/,info@demericsales.com,(352) 873-7220,Ocala,FL,USA,True
+Top Line Sales LLC,consignor,https://toplinesales.com/,info@toplinesales.com,502-647-3964,Crestwood,KY,USA,True
+Beth Bayer,consignor,,bethbayer1@gmail.com,352-804-6400,Ocala,FL,USA,False
+Tom McCrocklin,consignor,,,859-321-7269,Lexington,KY,USA,False
+Abbie Road Farm (Lisa McGreevy),consignor,,,,,,,True
+Eddie Woods,consignor,,,352-804-4814,Ocala,FL,USA,False
+Grassroots Training & Sales LLC,consignor,,grassrootstraining@gmail.com,859-351-6814,Lexington,KY,USA,True
+Wavertree Stables,consignor,http://wavertreestables.com/,wavertreefarm@gmail.com,803-640-4474,Aiken,SC,USA,True
+Kaizen Sales (Richard Kent),consignor,,,,,,,True
+Ocala Stud,consignor,https://ocalastud.com/,info@ocalastud.com,352-237-2171,Ocala,FL,USA,True
+Summerfield (Francis & Barbara Vanlangendonck),consignor,,,,,KY,USA,True
+Omar Ramirez Bloodstock,consignor,,,,,,,False
+Julie Davies,consignor,,,,,,,False
+Navas Equine,consignor,,info@navasequine.com,(859) 608-3471,Lexington,KY,USA,True
+Niall Brennan Stables,consignor,https://www.niallbrennan.com/,info@niallbrennan.com,(352) 873-0848,Ocala,FL,USA,True
+C.H.P.R.,buyer,,,,,,,False
+K.O.I.D. Co. Ltd.,buyer,,,,,,,False
+SROA (KOID),buyer,https://www.standardbredretirement.com/,sroakoid@gmail.com,732-462-9700,Millstone Township,NJ,USA,True
+J D Farms,buyer,,,,,,,True
+Nick J. Hines,buyer,,,,,,,False
+Pedro Lanz,buyer,,,,,,,False
+Dennis O'Neill,buyer,,,,Santa Ynez,CA,USA,False
+Harmash Racing,buyer,,,,,,,False
+Hideyuki Mori,buyer,,,,,,Japan,False
+West Point Thoroughbreds Inc. L.E.B.,buyer,https://www.westpointtb.com/,info@westpointtb.com,859-873-7327,Versailles,KY,USA,True
+Gary Folgner,buyer,,,,,,,False
+Peter Miller,buyer,https://www.petermillerstables.com/,info@petermillerstables.com,310-430-0252,Encinitas,CA,USA,True
+Legion Bloodstock,buyer,,,,,,,True
+Calumet Farm,buyer,https://calumetfarm.com/,info@calumetfarm.com,(859) 254-4593,Lexington,KY,USA,True
+Starship Stables,buyer,,,,,,,True

@@ -1,0 +1,291 @@
+{
+  "consignors": {
+    "de Meric Sales": {
+      "website": "http://www.demericsales.com/",
+      "email": "info@demericsales.com",
+      "phone": "(352) 873-7220",
+      "city": "Ocala",
+      "state": "FL",
+      "country": "USA",
+      "is_company": true
+    },
+    "Top Line Sales LLC": {
+      "website": "https://toplinesales.com/",
+      "email": "info@toplinesales.com",
+      "phone": "502-647-3964",
+      "city": "Crestwood",
+      "state": "KY",
+      "country": "USA",
+      "is_company": true
+    },
+    "Beth Bayer": {
+      "website": null,
+      "email": "bethbayer1@gmail.com",
+      "phone": "352-804-6400",
+      "city": "Ocala",
+      "state": "FL",
+      "country": "USA",
+      "is_company": false
+    },
+    "Tom McCrocklin": {
+      "website": null,
+      "email": null,
+      "phone": "859-321-7269",
+      "city": "Lexington",
+      "state": "KY",
+      "country": "USA",
+      "is_company": false
+    },
+    "Abbie Road Farm (Lisa McGreevy)": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": true
+    },
+    "Eddie Woods": {
+      "website": null,
+      "email": null,
+      "phone": "352-804-4814",
+      "city": "Ocala",
+      "state": "FL",
+      "country": "USA",
+      "is_company": false
+    },
+    "Grassroots Training & Sales LLC": {
+      "website": null,
+      "email": "grassrootstraining@gmail.com",
+      "phone": "859-351-6814",
+      "city": "Lexington",
+      "state": "KY",
+      "country": "USA",
+      "is_company": true
+    },
+    "Wavertree Stables": {
+      "website": "http://wavertreestables.com/",
+      "email": "wavertreefarm@gmail.com",
+      "phone": "803-640-4474",
+      "city": "Aiken",
+      "state": "SC",
+      "country": "USA",
+      "is_company": true
+    },
+    "Kaizen Sales (Richard Kent)": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": true
+    },
+    "Ocala Stud": {
+      "website": "https://ocalastud.com/",
+      "email": "info@ocalastud.com",
+      "phone": "352-237-2171",
+      "city": "Ocala",
+      "state": "FL",
+      "country": "USA",
+      "is_company": true
+    },
+    "Summerfield (Francis & Barbara Vanlangendonck)": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": "KY",
+      "country": "USA",
+      "is_company": true
+    },
+    "Omar Ramirez Bloodstock": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "Julie Davies": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "Navas Equine": {
+      "website": null,
+      "email": "info@navasequine.com",
+      "phone": "(859) 608-3471",
+      "city": "Lexington",
+      "state": "KY",
+      "country": "USA",
+      "is_company": true
+    },
+    "Niall Brennan Stables": {
+      "website": "https://www.niallbrennan.com/",
+      "email": "info@niallbrennan.com",
+      "phone": "(352) 873-0848",
+      "city": "Ocala",
+      "state": "FL",
+      "country": "USA",
+      "is_company": true
+    }
+  },
+  "buyers": {
+    "C.H.P.R.": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "K.O.I.D. Co. Ltd.": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "SROA (KOID)": {
+      "website": "https://www.standardbredretirement.com/",
+      "email": "sroakoid@gmail.com",
+      "phone": "732-462-9700",
+      "city": "Millstone Township",
+      "state": "NJ",
+      "country": "USA",
+      "is_company": true
+    },
+    "J D Farms": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": true
+    },
+    "Nick J. Hines": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "Pedro Lanz": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "Dennis O'Neill": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": "Santa Ynez",
+      "state": "CA",
+      "country": "USA",
+      "is_company": false
+    },
+    "Harmash Racing": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "Hideyuki Mori": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": "Japan",
+      "is_company": false
+    },
+    "West Point Thoroughbreds Inc. L.E.B.": {
+      "website": "https://www.westpointtb.com/",
+      "email": "info@westpointtb.com",
+      "phone": "859-873-7327",
+      "city": "Versailles",
+      "state": "KY",
+      "country": "USA",
+      "is_company": true
+    },
+    "Gary Folgner": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": false
+    },
+    "Peter Miller": {
+      "website": "https://www.petermillerstables.com/",
+      "email": "info@petermillerstables.com",
+      "phone": "310-430-0252",
+      "city": "Encinitas",
+      "state": "CA",
+      "country": "USA",
+      "is_company": true
+    },
+    "Legion Bloodstock": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": true
+    },
+    "Calumet Farm": {
+      "website": "https://calumetfarm.com/",
+      "email": "info@calumetfarm.com",
+      "phone": "(859) 254-4593",
+      "city": "Lexington",
+      "state": "KY",
+      "country": "USA",
+      "is_company": true
+    },
+    "Starship Stables": {
+      "website": null,
+      "email": null,
+      "phone": null,
+      "city": null,
+      "state": null,
+      "country": null,
+      "is_company": true
+    }
+  },
+  "summary": {
+    "total_entities": 30,
+    "consignor_success_rates": {
+      "websites": "5/15 (33.3%)",
+      "emails": "8/15 (53.3%)",
+      "phones": "10/15 (66.7%)",
+      "locations": "10/15 (66.7%)"
+    },
+    "buyer_success_rates": {
+      "websites": "4/15 (26.7%)",
+      "emails": "4/15 (26.7%)",
+      "phones": "4/15 (26.7%)",
+      "locations": "5/15 (33.3%)"
+    }
+  }
+}
